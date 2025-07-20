@@ -538,6 +538,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
+    vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
     vendor/xiaomi/garnet/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -1096,6 +1098,20 @@ PRODUCT_PACKAGES += \
     com.qti.feature2.ellcsupernight \
     com.qti.feature2.frameselect \
     com.qti.feature2.fusion \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms@2.0 \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_soft_dolby \
+    libcodec2_store_dolby \
+    libdapparamstorage \
+    libdeccfg \
+    libdlbdsservice \
+    libdlbpreg \
+    libdlbvol \
+    libswdap \
+    libswgamedap \
+    libswvqe \
     com.qti.feature2.generic \
     com.qti.feature2.gs.netrani \
     com.qti.feature2.hdr \
@@ -2035,8 +2051,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.gnss@2.1-service-qti.xml \
     android.hardware.security.keymint-service-qti-rkp.xml \
-    c2_manifest_vendor.xml \
-    c2_manifest_vendor_audio.xml \
     dataconnection-saidl.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mfidoca.xml \
@@ -2053,6 +2067,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     vendor.qti.memory.pasrmanager@1.0-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
+	vendor.dolby.hardware.dms@2.0-service \
+    vendor.dolby.media.c2@1.0-service \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
