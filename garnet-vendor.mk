@@ -2128,6 +2128,9 @@ PRODUCT_PACKAGES += \
     lowirpcd \
     mi_thermald \
     mlid \
+	libqcbassboost \
+    libqcreverb \
+    libqcvirt \
     mlipayd@1.1 \
     msm_irqbalance \
     mtd@1.3 \
